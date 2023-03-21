@@ -1,0 +1,44 @@
+@import 'reset';
+@import 'header';
+
+
+body {
+	background-color: #161516;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: 1000px;
+	padding: 0 15px;
+	margin:  0 auto;
+}
+
+
+/*Подключение шрифта=========================*/
+
+/*@font-face {
+	font-family: 'Имя файла';
+	src: url('../fonts/Имя файла.eot');
+	src: local('../fonts/Имя файла'), local('../Stolzl-Book'),
+			url('../fonts/Имя файла.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Имя файла.woff2') format('woff2'),
+			url('../fonts/Имя файла.woff') format('woff'),
+			url('../fonts/Имя файла.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+
+
+
+
