@@ -1,5 +1,45 @@
+.header {
+  
+  padding: 40px 0 0 0;
 
-.swiper {
-  height: 600px;
-  background: rgb(105, 56, 56);
+  &__inner {
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__burger-menu {
+    flex-grow: 1;
+  }
+
+  &__burger-btn {
+  }
+
+  &__menu {
+    display: flex;
+
+  }
+
+  &__menu-left {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__logo {
+  }
+
+  &__menu-right {
+  }
+
+  &__select {
+  }
+}
+.container {
 }

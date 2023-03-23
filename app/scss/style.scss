@@ -4,6 +4,8 @@
 
 body {
 	background-color: #161516;
+	font-family: 'Stolzl',sans-serif;
+	color: #fff;
 }
 
 .wrapper {
@@ -18,25 +20,50 @@ body {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 1800px;
 	padding: 0 15px;
-	margin:  0 auto;
+	margin: 0 auto;
 }
 
 
 /*Подключение шрифта=========================*/
 
-/*@font-face {
-	font-family: 'Имя файла';
-	src: url('../fonts/Имя файла.eot');
-	src: local('../fonts/Имя файла'), local('../Stolzl-Book'),
-			url('../fonts/Имя файла.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/Имя файла.woff2') format('woff2'),
-			url('../fonts/Имя файла.woff') format('woff'),
-			url('../fonts/Имя файла.ttf') format('truetype');
-	font-weight: normal;
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-bold.eot');
+	src: local('../fonts/Stolzl-bold'), local('../Stolzl-Book'),
+			url('../fonts/Stolzl-bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Stolzl-bold.woff2') format('woff2'),
+			url('../fonts/Stolzl-bold.woff') format('woff'),
+			url('../fonts/Stolzl-bold.ttf') format('truetype');
+	font-weight: 700;
 	font-style: normal;
-}*/
+}
+
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-Medium.eot');
+	src: local('../fonts/Stolzl-Medium'), local('../Stolzl-Book'),
+			url('../fonts/Stolzl-Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Stolzl-Medium.woff2') format('woff2'),
+			url('../fonts/Stolzl-Medium.woff') format('woff'),
+			url('../fonts/Stolzl-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-Regular.eot');
+	src: local('../fonts/Stolzl-Regular'), local('../Stolzl-Book'),
+			url('../fonts/Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Stolzl-Regular.woff2') format('woff2'),
+			url('../fonts/Stolzl-Regular.woff') format('woff'),
+			url('../fonts/Stolzl-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
 
 
 
