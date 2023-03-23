@@ -1,45 +1,130 @@
 .header {
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 40px 0 0 0;
 
   &__inner {
   }
 
   &__nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__burger-menu {
-    flex-grow: 1;
   }
 
   &__burger-btn {
+    background: transparent;
+    width: 71px;
+    height: 11px;
+    position: absolute;
+      &::before {
+        content: '';
+        width: 61px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 0px;
+        clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 2000%);
+
+        // border-top: 2px solid #ffffff;
+        // border-right: 3px solid #161517;
+      }
+      &::after {
+        content: '';
+        width: 61px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        bottom: 0px;
+        left: 0px;
+        clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 2000%);
+
+        // border-top: 2px solid #ffffff;
+        // border-right: 3px solid #161517;
+      }
   }
 
   &__menu {
     display: flex;
-
+    
   }
 
   &__menu-left {
+    padding: 0px 0px 0px 110px;
   }
 
   &__item {
+    &:nth-child(3){
+      margin-right: 0px;
+    }
+    &:nth-child(5){
+      margin-right: 55px;
+    }
+    margin-right: 55px;
+    
   }
 
   &__link {
+    z-index: 100;
+    font-weight: 500;
+    font-size: 15px;
+    color: #D7D7D7;
+    position: relative;
+    &:hover {
+      
+      &::before {
+        position: absolute;
+        z-index: -1;
+        bottom: 1px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 4px;
+        display: block;
+        background: #33b7bc;
+        clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 2000%);
+
+        // clip-path: polygon(18% 51%, 100% 50%, 79% 60%, 0 61%);
+
+      }
+    }
+   
   }
 
   &__logo {
   }
 
   &__menu-right {
+    padding: 0px 55px 0px 0px;
   }
 
   &__select {
   }
+
+  &__leng-select {
+    right: 0;
+    position: absolute;
+  }
 }
 .container {
+}
+
+
+.test {
+  margin-left: 100px;
+  background: rgb(231, 230, 230);
+  width: 300px;
+  height: 100px;
+  // clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 6000%);
+  clip-path: polygon(18% 51%, 100% 50%, 79% 60%, 0 61%);
 }
