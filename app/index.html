@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
 <body>
@@ -46,30 +47,45 @@
                 </a>
               </li>
               <li class="header__item">
-                <select class="header__select">
-                  <option>
-                    Dubai
-                  </option>
-                  <option>
-                    Budapest
-                  </option>
-                  <option>
-                    Wiesbaden
-                  </option>
-                </select>
+                <div class="header__dropdown">
+                  <button class="header__dropdown-dtn">
+                    button
+                  </button>
+                  <ul class="header__dropdown-list">
+                    <li class="header__dropdown-item" data-value="budapest">
+                      Dubai
+                    </li>
+                    <li class="header__dropdown-item" data-value="wiesbaden">
+                      Moscow
+                    </li>
+                    <li class="header__dropdown-item" data-value="moscow">
+                      Budapest
+                    </li>
+                    <li class="header__dropdown-item" data-value="dubai">
+                      Wiesbaden
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
-            <select class="header__leng-select">
-              <option>
-                eng
-              </option>
-              <option>
-                ukr
-              </option>
-              <option>
-                rus 
-              </option>
-            </select>
+            <div class="header-leng__dropdown">
+              <div class="header-leng__wrapper-dropdowm">
+                <button class="header-leng__dropdown-btn">
+                  dwd
+                </button>
+                <ul class="header-leng__dropdown-list">
+                  <li class="header-leng__dropdown-item">
+                    Uk
+                  </li>
+                  <li class="header-leng__dropdown-item">
+                    En
+                  </li>
+                  <li class="header-leng__dropdown-item">
+                    Ru
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
         </div>
       </div>
@@ -93,6 +109,7 @@
     <footer class="footer"></footer>
 
   </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
