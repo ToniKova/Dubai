@@ -1,45 +1,112 @@
 .dubai {
+  padding: 185px 0 0 0 ;
   background: url('../images/main-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   height: 100vh;
-
   position: relative;
-  z-index: -2;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-
+  z-index: 1;
   &::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.555);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba($color: #000000, $alpha: 0.5);
   }
 
+
+
+
   &__inner {
-    text-align: center;
-    position: relative;
+    padding: 300px 0 0 0;
+   
     
   }
 
+  &__title-box {
+    text-align: center;
+  }
+
   &__title {
-    padding-top: 70px;
     font-weight: 500;
     font-size: 120px;
-    line-height: 90px;
     color: #FFFFFF;
   }
 
   &__subtitle {
     font-weight: 400;
     font-size: 32px;
-    line-height: 90px;
     text-transform: uppercase;
     color: #FFFFFF;
   }
+
+
+  &__social-box {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+  }
+
+  &__social-link {
+    display: inline-block;
+    width: 54px ;
+    height: 54px;
+    border-radius: 50%;
+    position: relative;
+
+    // &--green:hover::after {
+    //   border: 5px solid #34df3d;
+
+    // }
+
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover:after,::before {
+      content: '';
+      animation: pulse 0.8s infinite;
+
+      position: absolute;
+      top: -26px;
+      left: -26px;
+      right: -26px;
+      bottom: -26px;
+
+      // border: 5px solid #34aadf;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.65);
+    }
+  }
+}
+.blue:hover::after {
+  border: 5px solid #34aadf;
+
+}
+.green:hover::after {
+  border: 5px solid #43d854
+
 }
 .container {
 }
+
+

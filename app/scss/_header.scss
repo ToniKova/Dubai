@@ -1,11 +1,9 @@
 .header {
-  z-index: 10;
   position: absolute;
-  top: 0;
+  top: 40px;
   left: 0;
   right: 0;
-  bottom: 0;
-  padding: 40px 0 0 0;
+  z-index: 2;
 
   &__inner {
   }
@@ -48,9 +46,14 @@
         bottom: 0px;
         left: 0px;
         clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 2000%);
-
-        // border-top: 2px solid #ffffff;
-        // border-right: 3px solid #161517;
+      }
+      &:hover::before{
+        transition: 0.3s;
+        background-color:#33B7BC;
+      }
+      &:hover::after{
+        transition: 0.3s;
+        background-color:#33B7BC;
       }
   }
 
@@ -82,7 +85,6 @@
     color: #D7D7D7;
     position: relative;
     &:hover {
-      
       &::before {
         position: absolute;
         z-index: -1;
@@ -106,6 +108,7 @@
   }
 
   &__menu-right {
+    margin-left: 75px;
     padding: 0px 40px 0px 0px;
   }
 
@@ -114,7 +117,21 @@
 
   &__dropdown {
     position: relative;
-    // display: none;
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      fill: #fff;
+      transition: 0.2s; 
+      transform: translateY(-50%);
+    }
+  }
+  .arrow-active { 
+    svg {
+      transform: rotate(180deg) translateY(50%);
+      transition: 0.2s; 
+      fill: #33B7BC;
+    }
   }
 
   &__dropdown-dtn {
@@ -126,55 +143,11 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 40%;
-      right: 0;
-      width: 8px;
-      height: 8px;
-      border-radius: 2px;
-
-      display: block;
-      // transform: translateY(-50%) rotate();
-      
-      transition: 0.2s;
-      border-style: solid;
-      border-width: 6px 6px 0 6px;
-      border-color: #007bff transparent transparent transparent;
-      // border-width: 0 0 2px 2px;
-      // background-color: #fff;
-      // border: 0 solid transparent;
-      // border-right-width: 6px solid #fff;
-      // border-left-width: 6px solid #fff;
-      // border-bottom: 6px solid rgb(218, 218, 218);
-    }
-
   }
-  // вариант с классом
-  .arrow-active::before {
-    transform: rotate(180deg) translateY(45%);
-    transition: 0.2s;
-    // border-width: 0 0 2px 2px;
-    // width: 0;
-    // height: 0;
-    // border-style: solid;
-    // border-width: 6px 6px 0 6px;
-    // border-color: #007bff transparent transparent transparent;
-    // // border: solid #33B7BC;
-    // width: 8px;
-    // height: 8px;
-    // display: block;
 
 
-     
-    // border: 0 solid #33B7BC;
-    // border: 0 solid transparent;
-    // border-right-width: 6px;
-    // border-left-width: 6px;
-    // border-bottom: 6px solid #33B7BC;
-  }
+
+
   
   &__dropdown-list {
     display: none;
@@ -218,6 +191,14 @@
   &__dropdown {
     right: 0;
     position: absolute;
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      fill: #fff;
+      transition: 0.2s;
+    }
   }
 
   &__wrapper-dropdowm {
@@ -232,20 +213,6 @@
     color: #D7D7D7;
     text-transform: uppercase;
     font-weight: 500;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      background-image: url('../images/select-arrow.svg');
-      width: 10px;
-      height: 5.7px;
-      color: #fff;
-      display: block;
-    }
-   
-   
   }
 
   
@@ -255,7 +222,7 @@
     z-index: 1;
     padding: 25px;
     position: absolute;
-    top: 34px;
+    top: 30px;
     right: 0;
     padding: 25px;
     border-radius: 14px;
@@ -293,11 +260,3 @@
 
 
 
-// .test {
-//   margin-left: 100px;
-//   background: rgb(231, 230, 230);
-//   width: 300px;
-//   height: 100px;
-//   // clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 6000%);
-//   clip-path: polygon(18% 51%, 100% 50%, 79% 60%, 0 61%);
-// }
