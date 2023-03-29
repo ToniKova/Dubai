@@ -1,30 +1,14 @@
 .dubai {
   padding: 185px 0 0 0 ;
-  background: url('../images/main-img.jpg');
+  background: linear-gradient(180deg, rgba(22, 21, 22, 0.9) -7.87%, rgba(22, 21, 22, 0.6) 100%),url('../images/main-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-color: rgba($color: #000000, $alpha: 0.5);
-  }
-
-
-
-
+  min-height: 100vh;
+  // position: relative;
+  
   &__inner {
     padding: 300px 0 0 0;
-   
-    
   }
 
   &__title-box {
@@ -77,12 +61,9 @@
       left: -26px;
       right: -26px;
       bottom: -26px;
-
-      // border: 5px solid #34aadf;
       border-radius: 50%;
       opacity: 0;
     }
-    
   }
   @keyframes pulse {
     0% {
@@ -97,16 +78,233 @@
       transform: scale(0.65);
     }
   }
+
+
+  &__burger-menu {
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    // left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+  
+    background: linear-gradient(60.07deg, rgba(22, 21, 22, 0.98) 43.23%, rgba(22, 21, 22, 0.75) 63.47%),url('../images/burger-bg.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+  
+    transition: 0.5s all;
+
+   
+  
+  }
+
+
+  &__close-btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    background: transparent;
+    border: none;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color:#fff;
+      display: block;
+      // transform: skewX(-75deg);
+      transform: rotate(45deg) translateY(-50%) skewX(75deg);
+
+    }
+    &::after {
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color:#fff;
+      display: block;
+      transform: rotate(-45deg) translateY(50%) skewX(-75deg);
+    }
+  }
+
+  &__burger-logo {
+    display: inline-block;
+  }
+
+  &__burger-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+   
+  }
+
+  &__burger-nav-list {
+    display: flex;
+  }
+
+  &__burger-list:not(:last-child) {
+    margin-right: 109px;
+    margin-left: 169px;
+    margin-bottom: 110px;
+  }
+
+
+  &__burger-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &__burger-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 44px;
+    color: #76828C;
+    &:hover {
+      color: #fff;
+      &::before {
+        position: absolute;
+        z-index: -1;
+        bottom: 7px;
+        left: 0;
+        content: '';
+        width:100%;
+        height: 10px;
+        display: block;
+        background: #33b7bc;
+        // clip-path: polygon(0% 0%, 0% 0, 100% 0%, 0% 2000%);
+        transform: skewX(-25deg)
+      }
+    }
+  }
+
+  &__social {
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #272727;;
+    }
+  }
+
+  &__social-info-desc {
+    margin-left: 169px;
+    .social-desс {
+      font-weight: 400;
+      font-size: 20px;
+      color: #76828C;
+    }
+  }
+
+  &__social-info-link {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-link {
+    font-weight: 700;
+    font-size: 34px;
+    color: #FFFFFF;
+  }
+
+  &__social-number-link {
+    font-weight: 700;
+    font-size: 27px;
+    color: #FFFFFF;
+    margin-right: 25px;
+     ;
+  }
 }
 .blue:hover::after {
   border: 5px solid #34aadf;
-
 }
+
 .green:hover::after {
   border: 5px solid #43d854
+}
 
+.burger-active {
+  left: 0%;
+  transition: 0.5s all;
 }
-.container {
+
+@media(max-width:1366px) {
+  .dubai__inner {
+    padding: 145px 0 0 0;
+  }
+  .dubai__title {
+    font-size: 90px;
+  }
+  .dubai__subtitle {
+    font-size: 24px;
+  }
+  .dubai__social-box {
+    bottom: 30px;
+    right: 30px;
+  }
+  .dubai__burger-logo {
+    width: 100px;
+  }
+  .dubai__burger-menu {
+    padding-top: 20px;
+  }
+  .dubai__close-btn {
+    width: 27px;
+  }
+  .dubai__burger-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .dubai__burger-link {
+    font-size: 40px;
+    &:hover {
+      &::before {
+        height: 7px;
+      }
+    }
+  }
+  .dubai__burger-list:not(:last-child) {
+    margin-right: 80px;
+    margin-left: 120px;
+    margin-bottom: 70px;
+  }
+  .dubai__burger-nav {
+    margin-bottom: 45px;
+  }
+  .dubai__social-info-desc .social-desс {
+    font-size: 15px;
+  }
+  .dubai__social {
+    margin-left: 120px;
+    padding: 25px 0;
+  }
+  .dubai__social-number-link {
+    font-size: 20px;
+  } 
+  
+  
 }
+
 
 
