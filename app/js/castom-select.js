@@ -21,7 +21,7 @@ dropdownItem.forEach(item => {
 
 // Селект с языками
 const lengBtn = document.querySelector('.header-leng__dropdown-btn')
-const lengDropdown = document.querySelector('.header-leng__dropdown')
+const lengDropdown = document.querySelector('.header__dropdown-leng')
 const lenglist = document.querySelector('.header-leng__dropdown-list')
 const lengItem = document.querySelectorAll('.header-leng__dropdown-item')
 

@@ -6,13 +6,15 @@
   z-index: 1;
   
 
-  &__inner {}
-
-  &__nav {
-    position: relative;
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  }
+
+  &__nav {
+    
   }
 
   &__burger-btn {
@@ -113,7 +115,6 @@
   }
 
   &__logo {
-
     @media(max-width:1366px) {
       width: 100px;
     }
@@ -123,12 +124,17 @@
     }
   }
 
+  &__logo-mobail {
+    display: none;
+  }
+
   &__menu-right {
     margin-left: 75px;
     padding: 0px 40px 0px 0px;
   }
 
   &__dropdown {
+    margin-right: 50px;
     position: relative;
     svg {
       position: absolute;
@@ -194,12 +200,13 @@
     }
   }
 
-}
-
-.header-leng {
-
-  &__dropdown {
-    right: 0;
+  &__dropdown-leng {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0px;
     position: absolute;
     svg {
       position: absolute;
@@ -209,6 +216,15 @@
       fill: #fff;
       transition: 0.2s;
     }
+
+  }
+
+}
+
+.header-leng {
+
+  &__dropdown {
+    
   }
 
   &__wrapper-dropdowm {
@@ -267,11 +283,68 @@
   display: block;
 }
 
+
 @media(max-width:1366px) {
   .header {
-    top: 20px;
+    top: 30px;
   }
 
+}
+
+@media(max-width:1200px) {
+  .header__menu {
+    display: none;
+  }
+ 
+
+  .header__link {
+  }
+  .header__nav {
+  }
+
+  .header__dropdown-leng {
+    position: static;
+  }
+  .header__logo {
+    margin-left: 50px;
+
+  }
+}
+
+@media(max-width:425px) {
+  .container {
+    padding: 0px 20px;
+  }
+  .header__logo {
+    display: none;
+  } 
+  .header__logo-mobail {
+    margin-left: 48px;
+    display: block;
+  } 
+  .dubai__burger-logo-mobail {
+    margin-left: -10px;
+  }
+
+  .dubai__burger-item:not(:last-child) {
+    margin-bottom: 43px;
+  }
+  .dubai__burger-link {
+    color:  #E7E7E7;;
+  }
+
+  .dubai__burger-link:hover::before {
+    position: absolute;
+    z-index: -1;
+    bottom: 2px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 10px;
+    display: block;
+    background: #33b7bc;
+    transform: skewX(-25deg);
+  }
 }
 
 

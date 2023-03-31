@@ -1,23 +1,31 @@
 .dubai {
-  padding: 185px 0 0 0 ;
+  // padding: 185px 0 0 0 ;
   background: linear-gradient(180deg, rgba(22, 21, 22, 0.9) -7.87%, rgba(22, 21, 22, 0.6) 100%),url('../images/main-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
   min-height: 100vh;
+  background-position: center;
   // position: relative;
   
   &__inner {
-    padding: 300px 0 0 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
   }
 
+  
+
   &__title-box {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
   }
 
   &__title {
     font-weight: 500;
-    font-size: 120px;
+    font-size: 115px;
     color: #FFFFFF;
   }
 
@@ -41,6 +49,9 @@
     height: 54px;
     border-radius: 50%;
     position: relative;
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
 
     // &--green:hover::after {
     //   border: 5px solid #34df3d;
@@ -48,9 +59,6 @@
     // }
 
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
 
     &:hover:after,::before {
       content: '';
@@ -81,7 +89,7 @@
 
 
   &__burger-menu {
-    padding-top: 40px;
+    // padding-top: 40px;
     position: absolute;
     top: 0;
     left: -100%;
@@ -100,10 +108,14 @@
   
     transition: 0.5s all;
 
-   
-  
   }
 
+  &__burger-inner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+  }
 
   &__close-btn {
     position: relative;
@@ -143,6 +155,10 @@
 
   &__burger-logo {
     display: inline-block;
+    
+  }
+  &__burger-logo-mobail {
+    display: none;
   }
 
   &__burger-nav {
@@ -150,11 +166,13 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 80px;
+    padding-top: 30px;
    
   }
 
   &__burger-nav-list {
     display: flex;
+    flex-grow: 1;
   }
 
   &__burger-list:not(:last-child) {
@@ -227,6 +245,9 @@
     font-weight: 700;
     font-size: 34px;
     color: #FFFFFF;
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
   }
 
   &__social-number-link {
@@ -240,6 +261,7 @@
 .blue:hover::after {
   border: 5px solid #34aadf;
 }
+ 
 
 .green:hover::after {
   border: 5px solid #43d854
@@ -252,7 +274,7 @@
 
 @media(max-width:1366px) {
   .dubai__inner {
-    padding: 145px 0 0 0;
+    // padding: 145px 0 0 0;
   }
   .dubai__title {
     font-size: 90px;
@@ -268,7 +290,7 @@
     width: 100px;
   }
   .dubai__burger-menu {
-    padding-top: 20px;
+    // padding-top: 30px;
   }
   .dubai__close-btn {
     width: 27px;
@@ -296,15 +318,102 @@
     font-size: 15px;
   }
   .dubai__social {
-    margin-left: 120px;
+    // margin-left: 120px;
     padding: 25px 0;
   }
   .dubai__social-number-link {
     font-size: 20px;
   } 
+  .dubai__social-info-desc {
+    margin-left: 120px;
+  }
   
   
 }
+
+@media(max-width:768px) {
+  .dubai__title {
+    font-size: 60px;
+  }   
+  .dubai__subtitle {
+    font-size: 17px;
+  }
+
+  .dubai__burger-link {
+    font-size: 30px;
+  }
+  .social-desс {
+    font-size: 12px;
+  }
+
+  .dubai__social-number-link {
+    font-size: 17px;
+  }
+  .dubai__social-link svg {
+  }
+  .dubai__burger-nav-list {
+    // margin: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dubai__burger-list:not(:last-child) {
+    margin: 0px;
+  }
+  .dubai__social-info-desc {
+    display: none; 
+  }
+  .dubai__social-info-link {
+    // margin: 0px 30px 0px 30px;
+    width: 100%;
+    display:flex ;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:425px) {
+  .dubai__burger-logo {
+    display: none;
+  }
+  .dubai__burger-logo-mobail {
+    display: block;
+  }
+  .dubai__burger-link {
+    font-size: 22px;
+  }
+  .dubai__burger-list:not(:last-child) {
+    margin: 0px;
+  }
+  .dubai__social-number-link {
+    font-size: 14px;
+  }
+  .dubai__social-link svg {
+    width: 48px;
+
+  } 
+
+  .dubai__burger-logo-mobail {
+    margin-left: -15px;
+  }
+  .dubai__burger-nav {
+    margin-bottom: 100px;
+  }
+  .dubai__burger-nav-list {
+    // margin: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dubai__burger-item:not(:last-child) {
+    margin-bottom: 43px;
+  }
+  .dubai__burger-link:hover::before  {
+    bottom: 2px;
+  }
+
+}
+
+
+
 
 
 
