@@ -1,6 +1,8 @@
 @import 'reset';
 @import 'header';
 @import 'dubai';
+@import 'popular';
+@import 'gallery';
 
 
 html {
@@ -12,6 +14,9 @@ body {
 	background-color: #161516;
 	font-family: 'Stolzl',sans-serif;
 	color: #fff;
+}
+body.noskroll {
+	overflow: hidden;
 }
 
 .wrapper {
