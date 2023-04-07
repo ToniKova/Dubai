@@ -1,5 +1,5 @@
 .popular {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   &__inner {
     display: flex;
@@ -280,25 +280,6 @@
 
 /*=================================================================*/
 
-
-
-
-
-
-
-
-.popular {
-
- 
-
- 
-
-  
-
-}
-
-
-
 .swiper-slide-active {
   color: #2EACB0;
   font-size: 30px;
@@ -317,3 +298,11 @@
 
 
 
+
+
+
+@media(max-width:1360px) {
+  .popular {
+    display: none;
+  }
+}
