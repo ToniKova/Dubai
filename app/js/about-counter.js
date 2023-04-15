@@ -9,32 +9,31 @@
 
 
 
+// let intervalCount = setInterval(counterActive,100)
 
 
+// console.log(counter.dataset)
 
-// function activeCounter( numberCount ) {
+
+// function counterActive (numberCount) {
+  
+//   const counter = document.querySelector('.about__statistics-title')
 // }
-// activeCounter()
 
-const counter = document.querySelectorAll('.about__statistics-title')
-counter.forEach(item => {
-  console.log(item.dataset)
-})
-
-// 
+// counterActive(counter.dataset)
 
 
 
-
-// const num = setInterval(countNum, 100)
-// let count = 0
-
-// function countNum (){
+// function countNum (numberCount){
 //   count++
-//   const yearNum = document.querySelector('.about__statistics-title')
 //   yearNum.innerHTML = count
   
 //   if (count === 10) {
 //     clearInterval(num)
 //   }
 // }
+
+
+
+// const num = setInterval(countNum, 100)
+// let count = 0

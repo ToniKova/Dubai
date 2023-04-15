@@ -1,0 +1,147 @@
+.footer {
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #272727;
+    width: 100%;
+    height: 1px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+  }
+
+  &__nav {
+    padding-top: 60px;
+    display: flex;
+    border-right: 1px solid #272727;
+  }
+
+  &__menu-list {
+
+  }
+
+  &__manu-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  &__menu-item {
+    margin-right: 223px;
+  }
+
+  &__menu-link {
+    font-size: 18px;
+    line-height: 60px;
+    color: #E2E2E2;
+    position: relative;
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 3px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #33B7BC;
+        transform: skewX(-25deg);
+      }
+    }
+  }
+
+  &__contact-wrappr {
+    padding-top: 60px;
+    padding-left: 80px;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__contacts-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: #FFFFFF;
+    margin-right: 30px;
+
+  }
+
+  &__social-link {
+    margin-right: 20px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+  &__btn { 
+    padding: 20px 39px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #33B7BC;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.4s all;
+    margin-bottom: 50px;
+    &:hover {
+      transition: 0.4s all;
+      box-shadow: 0px 0px 15px 1px #33B7BC;
+      color: #33B7BC;
+    }
+  }
+
+  &__text-locasion {
+    width: 416px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 70px;
+  }
+
+  &__label {
+    position: relative;
+    border: 1px solid #272727;
+    padding: 36px;
+    padding-right: 0px;
+    background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
+    border-radius: 10px;
+  }
+
+  &__input {
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #707070;
+
+    }
+  }
+
+  &__sub-btn {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateX(-50%);
+    padding: 29px 13px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #33B7BC;
+    border-radius: 10px;
+  }
+}
+.container {
+}

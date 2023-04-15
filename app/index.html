@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+  <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Trinity</title>
 </head>
@@ -103,9 +104,7 @@
         </div>
       </div>
     </header>
-
     <main class="main">
-
       <section class="dubai">
         <div class="dubai__burger-menu">
           <div class="container">
@@ -337,63 +336,7 @@
                   </div>
                 </div>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-                <!-- <div class="popular__brend-car">
-                  <ul class="popular__brend-list">
-                    <li class="popular__brend-item">
-                      <h4 class="popular__brend-title">
-                        Audi
-                      </h4>
-                      <span>Huracan EVO Spyder RS6</span>
-                    </li>
-                    <li class="popular__brend-item">
-                      <h4 class="popular__brend-title">
-                        Lamborghini
-                      </h4>
-                      <span>Urus</span>
-                    </li>
-                    <li class="popular__brend-item">
-                      <h4 class="popular__brend-title">
-                        Lamborghini
-                      </h4>
-                      <span>Huracan EVO Spyder </span>
-                    </li>
-                    <li class="popular__brend-item">
-                      <h4 class="popular__brend-title">
-                        Ferrari
-                      </h4>
-                      <span>Roma</span>
-                    </li>
-                    <li class="popular__brend-item">
-                      <h4 class="popular__brend-title">Range Rover</h4>
-                      <span>Autobiography New 2022</span>
-                    </li>
-                  </ul>
-                </div> -->
-
-
-
-
-
-
-
               </div>
-              <!-- <button class="popular__page-btn">
-                View all
-              </button> -->
             </div>
           </div>
         </div>
@@ -625,8 +568,6 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M801.741 642.276L1051.39 443.232L1042.84 386.901L793.663 585.571L801.741 642.276Z" fill="white"/>
           </g>
         </svg>
-        <div class="blure-box one"></div>
-        <!-- <div class="blure-box two"></div> -->
         <div class="container">
           <div class="about__inner">
             <div class="about__title">
@@ -661,17 +602,214 @@
                 </p>
               </div>
             </div>
+            <div class="about__comment-box">
+              <p class="about__comment-desk">
+                I’m with cars for over 18 years. My auto passion and attention to details will make your experience with us second to none. Guaranteed.
+              </p>
+              <p class="about__comment-author">
+                Kirill Aliev, MBA
+                <span>CEO Trinity car rental boutique</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about__bg-fone">
+          <img src="images/about_img.jpg" alt="Images">
+        </div>
+      </section>
+      <section class="advant">
+        <div class="container">
+          <div class="advant__title">
+            Advantages
+          </div>
+        </div>
+        <div class="advant__gallery">
+          <div class="advant__wrapper-item">
+            <img src="images/advant-img-1.jpg" alt="img-car">
+            <h4 class="advant__item-title">
+              40+ unique cars for rent from our fleet
+            </h4>
+          </div>
+          <div class="advant__wrapper-item">
+            <img src="images/advant-img-2.jpg" alt="img-car">
+            <h4 class="advant__item-title">
+              Delivery and return of cars in Dubai 24/7
+            </h4>
+          </div>
+          <div class="advant__wrapper-item">
+            <img src="images/advant-img-3.jpg" alt="img-car">
+            <h4 class="advant__item-title">
+              Insurance without a deductible for each car
+            </h4>
+          </div>
+          <div class="advant__wrapper-item">
+            <img src="images/advant-img-4.jpg" alt="img-car">
+            <h4 class="advant__item-title">
+              No video or audio recording in the car
+            </h4>
+          </div>
+          <div class="advant__wrapper-item">
+            <img src="images/advant-img-5.jpg" alt="img-car">
+            <h4 class="advant__item-title">
+              24/7 technical support
+            </h4>
+          </div>
+          <div class="advant__wrapper-item">
+            <img src="images/advant-img-6.jpg" alt="img-car">
+            <h4 class="advant__item-title">
+              All models have a premium package
+            </h4>
           </div>
         </div>
       </section>
-
-
-
+      <section class="ask">
+        <div class="container">
+          <div class="ask__inner">
+            <div class="ask__map" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231280.41318756537!2d55.06267976815655!3d25.07624244762545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z0JTRg9Cx0LDQuSAtINCe0LHRitC10LTQuNC90LXQvdC90YvQtSDQkNGA0LDQsdGB0LrQuNC1INCt0LzQuNGA0LDRgtGL!5e0!3m2!1sru!2sua!4v1681418556598!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="ask__box-form">
+              <h3 class="ask__title">
+                Ask us anything
+              </h3>
+              <form class="ask__form">
+                <label class="ask__form-label" for="">
+                  <input type="text" placeholder="Name">
+                </label>
+                <label class="ask__form-label" for="">
+                  <input type="text" placeholder="E-mail">
+                </label>
+                <label class="ask__form-label" for="">
+                  <input type="text" placeholder="Phone number">
+                </label>
+                <textarea rows="700" class="ask__form-textarea" placeholder="Message"></textarea>
+                <button class="ask__form-btn">Send the request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brand-slider">
+      <div class="container">
+          <div class="brand-slider__slider-wrapper">
+            <div class="brand-slider__slider-body">
+              <div class="brand-slider__slider-item">Slide 1</div>
+              <div class="brand-slider__slider-item">Slide 2</div>
+              <div class="brand-slider__slider-item">Slide 3</div>
+              <div class="brand-slider__slider-item">Slide 3</div>
+              <div class="brand-slider__slider-item">Slide 3</div>
+              <div class="brand-slider__slider-item">Slide 3</div>
+              <div class="brand-slider__slider-item">Slide 3</div>
+            </div>
+          </div>
+      </div>
+      </section>
     </main>
-
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content-wrapper">
+          <nav class="footer__nav">
+            <ul class="footer__menu-list">
+              <h5 class="footer__manu-title">For Customers</h5>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">About Us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Conditions</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Testimonials</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Articles</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Contacts</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <h5 class="footer__manu-title">Car List</h5>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!"> SUVs</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Convertibles</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Sports Cars</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Premium</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Coupe</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <h5 class="footer__manu-title">Service</h5>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Car List</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Yacht list</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#!">Chauffeur</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contact-wrappr">
+            <div class="footer__link-wrapper">
+              <a class="footer__contacts-link" href="tel:+971585907875">
+                +971 58 590 7875
+              </a>
+              <a class="footer__social-link" href="#!">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="20" fill="#34AADF"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.81 22.8808L10.1505 20.9533C9.6611 20.7504 9.35002 20.2823 9.36581 19.7715C9.38252 19.2608 9.72145 18.8114 10.2229 18.6378C13.6242 17.4578 23.9119 13.8876 26.8926 12.8527C27.3439 12.697 27.8481 12.7913 28.2047 13.0983C28.5612 13.4062 28.7117 13.877 28.5974 14.3237C27.9345 16.8937 25.8842 24.8474 25.2583 27.275C25.1497 27.6977 24.8182 28.035 24.3855 28.1649C23.9518 28.2957 23.4792 28.1996 23.1384 27.9122L19.9766 25.2505L17.5019 27.5242C17.1463 27.8508 16.63 27.9567 16.1657 27.7992C15.7024 27.6408 15.3718 27.2457 15.3115 26.7776L14.81 22.8808ZM23.7819 26.3228L26.8072 14.5862L11.6733 19.8383L15.668 21.4917C16.0915 21.667 16.3867 22.0443 16.4434 22.483L16.8798 25.877L18.7082 24.1978L18.5466 24.0643C18.2671 23.8356 18.1027 23.5046 18.0925 23.1531C18.0814 22.8016 18.2272 22.4625 18.4918 22.2187C19.4845 21.3066 22.1327 18.8745 22.1327 18.8745C22.4661 18.5684 22.9954 18.5791 23.3148 18.8986C23.6333 19.2171 23.6222 19.7244 23.2897 20.0305L19.945 23.1033L20.4957 23.5553L23.7819 26.3228Z" fill="white"/>
+                </svg>
+              </a>
+              <a class="footer__social-link" href="#!">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="20" fill="#43D854"/>
+                  <g clip-path="url(#clip0_6389_14)">
+                  <path d="M25.1356 22.211C24.9146 22.1011 23.4778 21.4419 23.2568 21.3321C23.0358 21.2222 22.8147 21.2222 22.5937 21.4419C22.3727 21.6617 21.9306 22.3208 21.7096 22.5406C21.599 22.7603 21.378 22.7603 21.157 22.6504C20.3833 22.3208 19.6097 21.8814 18.9466 21.3321C18.394 20.7828 17.8414 20.1236 17.3994 19.4644C17.2888 19.2447 17.3994 19.025 17.5099 18.9151C17.6204 18.8052 17.7309 18.5855 17.9519 18.4757C18.0625 18.3658 18.173 18.1461 18.173 18.0362C18.2835 17.9263 18.2835 17.7066 18.173 17.5968C18.0625 17.4869 17.5099 16.1685 17.2888 15.6192C17.1783 14.8502 16.9573 14.8502 16.7362 14.8502H16.1837C15.9626 14.8502 15.6311 15.0699 15.5206 15.1798C14.8574 15.839 14.5259 16.608 14.5259 17.4869C14.6364 18.4757 14.968 19.4644 15.6311 20.3433C16.8468 22.1011 18.394 23.5293 20.2728 24.4082C20.8254 24.628 21.2675 24.8477 21.8201 24.9576C22.3727 25.1773 22.9252 25.1773 23.5884 25.0674C24.362 24.9576 25.0251 24.4082 25.4672 23.7491C25.6882 23.3096 25.6882 22.8702 25.5777 22.4307L25.1356 22.211ZM27.8986 12.2135C23.5884 7.92884 16.6257 7.92884 12.3155 12.2135C8.77896 15.7291 8.11586 21.1124 10.5472 25.397L9 31L14.8574 29.4619C16.5152 30.3408 18.2835 30.7803 20.0518 30.7803C26.1303 30.7803 30.9931 25.9463 30.9931 19.9039C31.1036 17.0474 29.8879 14.3009 27.8986 12.2135ZM24.9146 27.5943C23.4778 28.4732 21.8201 29.0225 20.0518 29.0225C18.394 29.0225 16.8468 28.583 15.41 27.814L15.0785 27.5943L11.6524 28.4732L12.5366 25.1773L12.3155 24.8477C9.66311 20.4532 10.9893 14.9601 15.2995 12.2135C19.6097 9.46692 25.1356 10.8951 27.788 15.0699C30.4405 19.3546 29.2248 24.9576 24.9146 27.5943Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_6389_14">
+                  <rect width="22" height="22" fill="white" transform="translate(9 9)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <button class="footer__btn">
+              REQUEST A CALLBACK
+            </button>
+            <p class="footer__text-locasion">
+              24 4th St - Al Quoz - Al Quoz Industrial Area 3 - Dubai
+            </p>
+            <label class="footer__label">
+              <input class="footer__input" type="mail" placeholder="Write your E-mail">
+              <button class="footer__sub-btn" type="submit">Submit</button>
+            </label>
+          </div>
+        </div>
+        <!-- <div class="footer__img-wrapper">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div> -->
+      </div>
+    </footer>
 
   </div>
+ <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYqu4WXegsYZK9IHI6ogkj1yuLpR-lwWA&callback=initMap&v=weekly" defer></script> -->
+  <!-- <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

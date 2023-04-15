@@ -64,6 +64,7 @@
     &:hover:after,::before {
       content: '';
       animation: pulse 0.8s infinite;
+      // animation: none;
 
       position: absolute;
       top: -26px;
@@ -72,6 +73,12 @@
       bottom: -26px;
       border-radius: 50%;
       opacity: 0;
+    }
+
+    @media(max-width:768px) {
+      &:hover:after,::before {
+        animation: none;
+      }
     }
   }
   @keyframes pulse {
@@ -273,6 +280,11 @@
   transition: 0.5s all;
 }
 
+
+
+
+
+
 @media(max-width:1366px) {
   .dubai__inner {
     // padding: 145px 0 0 0;
@@ -333,6 +345,10 @@
 }
 
 @media(max-width:768px) {
+
+  .dubai {
+    height: 100%;
+  }
   .dubai__title {
     font-size: 60px;
   }   
@@ -369,6 +385,10 @@
     display:flex ;
     justify-content: space-between;
   }
+
+
+
+
 }
 
 @media(max-width:425px) {

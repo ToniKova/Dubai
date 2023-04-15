@@ -4,6 +4,10 @@
 @import 'popular';
 @import 'gallery';
 @import 'about';
+@import 'advant';
+@import 'ask';
+@import 'brand-slider';
+@import 'footer';
 
 
 html {
@@ -32,7 +36,7 @@ body.noskroll {
 }
 
 .container {
-	max-width: 1800px;
+	max-width: 1860px;
 	padding: 0 30px;
 	margin: 0 auto;
 	@media(max-width:475px) {
