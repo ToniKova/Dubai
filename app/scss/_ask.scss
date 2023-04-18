@@ -22,10 +22,12 @@
     font-style: normal;
     font-weight: 500;
     font-size: 69px;
-    line-height: 90px;
     color: #FFFFFF;
     margin-bottom: 80px;
 
+  }
+  &__box-form {
+    width: 700px;
   }
 
   &__form {
@@ -34,7 +36,7 @@
   &__form-label {
     padding: 30px 30px 30px 30px;
     width: 100%;
-    display: block;
+    display: inline-block;
     background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
     border-radius: 10px;
     border: 1px solid #272727;
@@ -76,6 +78,8 @@
     }
   }
 
+  &__box-btn {}
+
   &__form-btn {
     padding: 30px 65px;
     display: block;
@@ -95,4 +99,95 @@
   }
 }
 .container {
+}
+
+
+
+@media(max-width:1600px) {
+  .ask__title {
+    font-size: 60px;
+  } 
+  .ask__form-label {
+    // width: 600px;
+  }
+}
+@media (max-width:1440px) {
+  .ask__box-form {
+    width: 600px;
+  }
+  .ask__form-textarea {
+    width: 600px;
+  }
+}
+@media(max-width:1366px) {
+  .ask__title {
+    font-size: 55px;
+  }
+  .ask__form-label {
+    padding: 25px 30px 25px 30px;
+  }
+  .ask__form-btn {
+    padding: 25px 50px;
+  }
+
+}
+@media(max-width:1270px) {
+  .ask__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ask__map {
+    width: 900px;
+    height: 600px;
+    margin-right: 0px;
+  }
+  .ask__title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .ask__box-btn {
+    text-align: center;
+  }
+  .ask__form-btn {
+    display: inline-block;
+  }
+}
+@media(max-width:750px) {
+  .ask__map {
+    display: none;
+  }
+  .ask__title {
+    margin-bottom: 30px;
+  }
+  .ask__box-form {
+    width: 100%;
+  }
+  .ask__form-textarea {
+    width: 100%;
+  }
+ 
+}
+@media(max-width:360px) {
+  .ask__form-label {
+    padding: 22px;
+  }
+  .ask__form-label {
+    input {
+      font-size: 15px;
+      &::placeholder {
+        font-size: 15px;
+      }
+    }
+  }
+  .ask__form-textarea {
+    padding: 22px;
+    font-size: 15px;
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
 }

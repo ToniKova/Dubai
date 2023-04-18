@@ -1,39 +1,22 @@
 
 
-// const wrapper = document.querySelector('.wrapper')
-
-// window.addEventListener('scroll', function() {
-//   const scrolled = window.scrollY
-//   console.log(scrolled)
-// })
+const numCounter = document.querySelectorAll('.about__statistics-title')
 
 
+let interval = 2000
 
-// let intervalCount = setInterval(counterActive,100)
-
-
-// console.log(counter.dataset)
-
-
-// function counterActive (numberCount) {
-  
-//   const counter = document.querySelector('.about__statistics-title')
-// }
-
-// counterActive(counter.dataset)
+numCounter.forEach(item => {
+  let startValue = 0
+  let endValue = parseInt(item.getAttribute('data-count'))
+  let duration = Math.floor(interval / endValue)
+  let counter = setInterval(function() {
+    startValue += 1
+    item.textContent = startValue
+    if (startValue == endValue) {
+      clearInterval(counter)
+    }
+  },duration)
+})
 
 
 
-// function countNum (numberCount){
-//   count++
-//   yearNum.innerHTML = count
-  
-//   if (count === 10) {
-//     clearInterval(num)
-//   }
-// }
-
-
-
-// const num = setInterval(countNum, 100)
-// let count = 0

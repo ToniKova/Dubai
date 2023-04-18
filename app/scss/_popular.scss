@@ -59,6 +59,8 @@
 
   &__nav-cart {
     display: flex;
+    overflow: hidden;
+    height: 518px;
   }
 
   &__btn-box {
@@ -146,6 +148,8 @@
  
   &__brend-car {
     position: relative;
+    // overflow: hidden;
+
     // &.slider-line-top {
     //   width: 61px;
     //   height: 3px;
@@ -224,6 +228,7 @@
   }
 
   &__slider-body {
+    height: 530px;
   }
 
 
@@ -261,6 +266,7 @@
   height: 3px;
   background: #2C2C2C;
   display: block;
+  z-index: 10;
 }
 .slider-line-bottom {
   position: absolute;

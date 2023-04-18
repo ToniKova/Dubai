@@ -1,13 +1,26 @@
 .footer {
   position: relative;
-  &:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #272727;
-    width: 100%;
-    height: 1px;
+ 
+
+  &__wrapper {
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #272727;
+      width: 100%;
+      height: 1px;
+    }
+    // &::after{
+    //   content: '';
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   background-color: #272727;
+    //   width: 100%;
+    //   height: 1px;
+    // }
   }
 
   &__content-wrapper {
@@ -21,7 +34,7 @@
   }
 
   &__menu-list {
-
+    margin-right: 223px;
   }
 
   &__manu-title {
@@ -32,12 +45,11 @@
   }
 
   &__menu-item {
-    margin-right: 223px;
+    margin-bottom: 40px;
   }
 
   &__menu-link {
     font-size: 18px;
-    line-height: 60px;
     color: #E2E2E2;
     position: relative;
     &:hover {
@@ -58,6 +70,7 @@
   &__contact-wrappr {
     padding-top: 60px;
     padding-left: 80px;
+    padding-bottom: 62px;
   }
 
   &__link-wrapper {
@@ -80,6 +93,9 @@
     &:last-child{
       margin-right: 0px;
     }
+  }
+
+  &__box-btn {
   }
 
   &__btn { 
@@ -108,9 +124,11 @@
   }
 
   &__label {
+    width: 568px;
+    display: inline-block;
     position: relative;
     border: 1px solid #272727;
-    padding: 36px;
+    padding: 32px;
     padding-right: 0px;
     background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
     border-radius: 10px;
@@ -120,6 +138,8 @@
     background: transparent;
     font-size: 18px;
     color: #fff;
+    width: 100%;
+    padding-right: 100px;
     &::placeholder {
       font-style: normal;
       font-weight: 400;
@@ -131,9 +151,9 @@
 
   &__sub-btn {
     position: absolute;
-    top: 50%;
     right: 5px;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
     padding: 29px 13px;
     font-weight: 700;
     font-size: 15px;
@@ -142,6 +162,254 @@
     background: #33B7BC;
     border-radius: 10px;
   }
+
+
+
+
+  &__box-pay {
+    padding: 35px 0px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #272727;
+      width: 100%;
+      height: 1px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #272727;
+      width: 100%;
+      height: 1px;
+    }
+  }
+
+  &__img-pya {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      filter: grayscale(1);
+      transition: 0.4s all;
+      &:hover {
+        transition: 0.4s all;
+        filter: grayscale(0)
+      }
+    }
+
+  }
+
+  &__bottom {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.4s all;
+    &:hover {
+      transition: 0.4s all;
+      color: #33B7BC;
+    }
+  }
+
+  &__bottom-text-centr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #525252;
+  }
+
+  &__bottom-link-item {
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+    svg {
+      fill: #ffffff;
+      transition: 0.4s all;
+
+    }
+    &:hover {
+      svg {
+        transition: 0.4s all;
+        fill: #33B7BC;
+      }
+    }
+  }
+
 }
-.container {
+
+
+@media(max-width:1770px) {
+  .footer__menu-list {
+    margin-right: 150px;
+  }
+}
+@media(max-width:1540px) {
+  .footer__menu-list {
+    margin-right: 100px;
+  }
+}
+@media(max-width:1366px) {
+  .footer__menu-list {
+    margin-right: 100px;
+  }
+
+  .footer__manu-title {
+    font-size: 18px;
+  }
+
+  .footer__menu-link {
+    font-size: 16px;
+  }
+  .footer__contacts-link {
+    font-size: 30px;
+  }
+  .footer__text-locasion {
+    font-size: 20px;
+  }
+  .footer__label {
+    width: 528px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #272727;
+    padding: 25px;
+    padding-right: 0px;
+    background: linear-gradient(90.75deg, #1C1C1C 0.65%, rgba(27, 27, 27, 0.4) 107.06%);
+    border-radius: 10px;
+  }
+
+  .footer__sub-btn {
+    padding: 23px 13px;
+    font-size: 14px;
+  }
+  .footer__input {
+    font-size: 16px;
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+}
+@media(max-width:1300px) {
+  .footer__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__nav {
+    border: none;
+    border-right: 1px solid #272727;
+  }
+
+  .footer__contact-wrappr {
+    padding-left: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+  }
+  .footer__link-wrapper {
+    justify-content: center;
+  }
+  .footer__input {
+    text-align: left;
+  }
+  .footer__box-btn {
+    text-align: center;
+  }
+  .footer__text-locasion {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer__text-locasion  {
+    margin-bottom: 20px;
+  }
+}
+@media(max-width:1269px) {
+  .footer__nav {
+    border-right: none;
+  }
+  .footer__contact-wrappr {
+    padding-left: 0px;
+  }
+}
+@media(max-width:1170px) {
+  .footer__box-pay {
+    display: none;
+  }
+  .footer__nav {
+    border-bottom: 1px solid #272727;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #272727;
+      width: 100%;
+      height: 1px;
+    }
+  }
+}
+@media(max-width:768px) {
+  .footer__menu-list {
+    margin-right: 50px;
+  }
+  .footer__text-locasion {
+    margin-bottom: 20px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    border-top:1px solid #272727
+  }
+  .footer__bottom-text {
+    margin-bottom: 10px;
+  }
+  .footer__bottom-text-centr {
+    margin-bottom: 10px;
+  }
+  .footer__label {
+    width: 450px;
+  }
+}
+@media(max-width:560px) {
+  .footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__menu-list {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  .footer__contacts-link {
+    font-size: 23px;
+    margin-right: 20px;
+  }
+  .footer__contact-wrappr {
+    padding-left: 0px;
+  }
+
+  .footer__social-link {
+    margin-right: 10px;
+  }
+  .footer__text-locasion {
+    font-size: 21px;
+  }
+  .footer__label {
+    display: none;
+  }
+  .footer__manu-title {
+    font-size: 15px;
+  }
+  .footer__menu-link {
+    font-size: 13px;
+  }
+  
 }

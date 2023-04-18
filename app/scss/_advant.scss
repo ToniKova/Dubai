@@ -89,11 +89,18 @@
   }
 }
 @media(max-width:768px) {
+  .advant {
+  }
   .advant__wrapper-item {
     flex: 100%;
   }
   .advant__title {
     font-size: 60px;
+  }
+}
+@media(max-width:750px) {
+  .advant {
+    margin-bottom: 50px;
   }
 }
 @media(max-width:475px) {
