@@ -1,4 +1,5 @@
 .brand-slider {
+  padding: 0 30px;
   margin-bottom: 100px;
 
   &__slider-wrapper {
@@ -10,8 +11,32 @@
 
 
   &__slider-item {
-    width: 100%;
-    height: 20px;
-    border: 1px solid #1d2374;
+   
   }
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.swiper-slide {
+  width: 200px;
+}
+
+.siper-item-link {
+  font-weight: 500;
+  font-size: 40px;
+  color: #414141;
+}
+
+.swiper-slide {
+}
+
+.brand-slider__slider-item {
+  width: 100%;
+  height: 100px;
+  background: rgb(119, 61, 61);
 }
